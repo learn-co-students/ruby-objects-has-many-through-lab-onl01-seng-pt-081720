@@ -1,5 +1,5 @@
 class Song
-    attr_reader :artist
+    attr_reader :artist, :title, :genre
 
     @@all = []
 
@@ -8,6 +8,7 @@ class Song
         @artist = artist
         @genre = genre
         @@all << self
+        genre.add_song(self)
     end
 
     def self.all
