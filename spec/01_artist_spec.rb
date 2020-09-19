@@ -1,8 +1,6 @@
 require "spec_helper"
 
-
 describe "Artist" do
-
   describe "#name" do
     it "has a name" do
       jay_z = Artist.new("Jay-Z")
@@ -58,5 +56,4 @@ describe "Artist" do
       expect(jay_z.songs.last.genre).to eq(rap)
     end
   end
-
 end

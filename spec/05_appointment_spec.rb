@@ -1,7 +1,6 @@
 require "spec_helper"
 
 describe "Appointment" do
-
   describe ".all" do
     it "knows about all appointments that have been created" do
       doctor_who = Doctor.new("The Doctor")
@@ -19,7 +18,7 @@ describe "Appointment" do
       doctor_who = Doctor.new("The Doctor")
       hevydevy = Patient.new("Devin Townsend")
 
-      expect{Appointment.new("Friday, January 32nd", hevydevy, doctor_who)}.to_not raise_error
+      expect {Appointment.new("Friday, January 32nd", hevydevy, doctor_who)}.to_not raise_error
     end
   end
 
