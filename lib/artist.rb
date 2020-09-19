@@ -18,6 +18,7 @@ class Artist
 
   def genres
     Genre.all.select {|genres| genres.song == self}
+    binding.pry
   end
 
   def new_song(name, genre)
