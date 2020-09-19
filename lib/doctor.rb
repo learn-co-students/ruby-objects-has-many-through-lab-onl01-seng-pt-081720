@@ -20,4 +20,6 @@ attr_accessor :name
     Appointment.new(patient, date, self)
   end
   
+
+  
 end 
